@@ -1,0 +1,15 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "lab 3 for cs 546",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "austin cawley-edwards <acawleye@stevens.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "fs-promise": "^1.0.0",
+    "glob": "^7.1.1"
+  }
+}

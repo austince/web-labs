@@ -1,0 +1,29 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "description": "A Recipe API with Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cs-546",
+    "web",
+    "api",
+    "json"
+  ],
+  "author": "austince <acawleye@stevens.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "bunyan": "^1.8.5",
+    "bunyan-middleware": "^0.6.0",
+    "express": "^4.14.1",
+    "http-errors": "^1.6.1",
+    "http-status-codes": "^1.1.6",
+    "mongodb": "^2.2.24",
+    "require-dir": "^0.3.1",
+    "uuid": "^3.0.1"
+  }
+}

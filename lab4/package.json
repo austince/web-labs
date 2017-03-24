@@ -1,0 +1,20 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "lab4 for CS 546",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "mongo",
+    "classwork"
+  ],
+  "author": "austin cawley-edwards <acawleye@stevens.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.22",
+    "uuid": "^3.0.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "Basic API with Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cs-546",
+    "web",
+    "api",
+    "json"
+  ],
+  "author": "austince <acawleye@stevens.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "bunyan-middleware": "^0.6.0",
+    "express": "^4.14.1",
+    "require-dir": "^0.3.1"
+  }
+}

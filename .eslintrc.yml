@@ -1,0 +1,15 @@
+root: true
+
+env:
+  browser: false
+  node: true
+
+extends:
+    "airbnb"
+
+rules:
+  vars-on-top: 0
+  no-plusplus: 0
+  no-console: 0
+  no-restricted-syntax: 0
+  arrow-body-style: 0

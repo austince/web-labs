@@ -1,0 +1,26 @@
+{
+  "development": {
+    "port": 3000,
+    "name": "DEVELOPMENT Lab 7 Recipe API",
+    "mongo": {
+      "serverUrl": "mongodb://localhost:27017/",
+      "database": "lab7-recipes"
+    }
+  },
+  "production": {
+    "port": 3000,
+    "name": "PRODUCTION Lab 7 Recipe API",
+    "mongo": {
+      "serverUrl": "mongodb://localhost:27017/",
+      "database": "lab7-recipes"
+    }
+  },
+  "testing": {
+    "port": 3001,
+    "name": "TESTING Lab 7 Recipe API",
+    "mongo": {
+      "serverUrl": "mongodb://localhost:27017/",
+      "database": "test-lab7-recipes"
+    }
+  }
+}
