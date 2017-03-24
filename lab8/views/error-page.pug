@@ -1,0 +1,12 @@
+extends layouts/main-layout
+//- Created by austin on 3/24/17.
+
+block content
+    case errorCode
+        when 404
+            include partials/not-found-error
+        default
+            include partials/server-error
+
+append styles
+    link(rel='stylesheet' href='/css/error.css')

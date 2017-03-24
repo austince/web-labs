@@ -8,14 +8,16 @@
     "uuid": "^3.0.1"
   },
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "chai-http": "^3.0.0",
     "eslint": "^3.14.0",
     "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-airbnb-es5": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-react": "^6.10.3",
     "glob": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
@@ -23,6 +25,7 @@
     "gulp-param": "^1.0.3",
     "gulp-zip": "^4.0.0",
     "http-status-codes": "^1.1.6",
+    "init-package-json": "^1.9.5",
     "mocha": "^3.2.0",
     "mongodb": "^2.2.24",
     "test-console": "^1.0.0"
