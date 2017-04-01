@@ -1,0 +1,14 @@
+root: true
+
+env:
+  browser: true
+  node: false
+
+extends:
+    "eslint-config-airbnb-es5"
+
+rules:
+  vars-on-top: 0
+  no-plusplus: 0
+  no-console: 0
+  no-restricted-syntax: 0

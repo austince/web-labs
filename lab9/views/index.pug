@@ -1,0 +1,22 @@
+extends layouts/main-layout
+
+//- block meta
+
+//- block styles
+append styles
+    link(rel='stylesheet' href='/css/palindrome.css')
+
+block content
+    section.input
+        h2 Hmm ...
+        form#palindrome-form
+            label(for="palindrome-text-area") is it a ...
+            textarea#palindrome-text-area(required)
+            input(type='submit' value='palindrome?')
+
+    section.output
+        ul#palindrome-output-list
+
+
+append scripts
+    script(src="/js/palindrome.js")

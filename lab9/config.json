@@ -1,0 +1,14 @@
+{
+  "development": {
+    "port": 3000,
+    "name": "Lab 8 - Dev"
+  },
+  "production": {
+    "port": 3000,
+    "name": "Lab 8 - Production"
+  },
+  "testing": {
+    "port": 3001,
+    "name": "Lab 8 - Testing"
+  }
+}
