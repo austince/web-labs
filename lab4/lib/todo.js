@@ -51,7 +51,7 @@ function getTask(id) {
 
   return getCollection()
       .then((collection) => {
-        return collection.findOne({ _id: id });
+        return collection.findByUsername({ _id: id });
       }).then(Todo.fromData);
 }
 

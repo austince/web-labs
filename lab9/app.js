@@ -3,12 +3,17 @@
  */
 
 const express = require('express');
+const passport = require('passport');
+
+const expressSession = require('express-session');
+const flash = require('connect-flash');
 const bunyan = require('bunyan');
 const bunyanMiddleware = require('bunyan-middleware');
-
 const HttpStatus = require('http-status-codes');
+
 const config = require('./lib/config');
 const routes = require('./lib/routes');
+const authStrategy = require('./lib/auth');
 
 const app = express();
 const logger = bunyan.createLogger({
@@ -23,11 +28,22 @@ app.use(bunyanMiddleware({
   logger,
 }));
 
-// ROUTES
-app.get('/', (req, res) => {
-  res.render('index', { title: config.name });
-});
+app.use(expressSession({
+  secret: config.secret,
+  resave: false,
+  saveUninitialized: false,
+}));
 
+app.use(flash());
+// Passport setup
+passport.use(authStrategy);
+passport.serializeUser(authStrategy.serializeUser);
+passport.deserializeUser(authStrategy.deserializeUser);
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// ROUTES
 app.use(routes);
 
 // Error handling
@@ -49,17 +65,17 @@ app.use((req, res) => {
 
   // respond with html page
   if (req.accepts('html')) {
-    res.render('error-page', { title: 'Error', errorCode, errorDescription });
+    res.render('error-page', {title: 'Error', errorCode, errorDescription});
     return;
   }
 
   // respond with json
   if (req.accepts('json')) {
-    res.send({ errorDescription });
+    res.send({errorDescription});
     return;
   }
 
-  // default to plain-text. send()
+  // default to plain-text.
   res.type('txt').send(errorDescription);
 });
 

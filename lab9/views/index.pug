@@ -4,19 +4,22 @@ extends layouts/main-layout
 
 //- block styles
 append styles
-    link(rel='stylesheet' href='/css/palindrome.css')
+    link(rel='stylesheet' href='/css/login.css')
 
 block content
-    section.input
-        h2 Hmm ...
-        form#palindrome-form
-            label(for="palindrome-text-area") is it a ...
-            textarea#palindrome-text-area(required)
-            input(type='submit' value='palindrome?')
-
-    section.output
-        ul#palindrome-output-list
+    div#content-container
+        div#login-container
+            section.login
+                form#login-form(action='/login' method='post')
+                    label(for='username') Username
+                    input(id='username' type='text' name='username' placeholder='Username' required)
+                    label(for='password') Password
+                    input(id='password' type='password' name='password' placeholder='Password' required)
+                    input(type='submit' value='Login')
+                ul.errors
+                    each error in errors
+                        li= error
 
 
 append scripts
-    script(src="/js/palindrome.js")
+    script(src="/js/login.js")

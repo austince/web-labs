@@ -5,13 +5,13 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background: white;
     font-family: Muli, Futura, Helvetica, Arial, sans-serif;
 }
 
 header {
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding: 0 16px;
 }
 
 footer {

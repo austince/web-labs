@@ -1,0 +1,17 @@
+extends layouts/main-layout
+//- Created by austin on 4/1/17.
+
+//- block meta
+
+//- block styles
+append styles
+    link(rel='stylesheet' href='/css/profile.css')
+
+block content
+    div#content-container
+        section.user-profile
+            h2.username #{user.username}
+            p.name #{user.fullName}
+            p.profession #{user.profession}
+            aside.user-bio #{user.bio}
+

@@ -1,0 +1,48 @@
+header {
+    position: absolute;
+}
+
+header h1 {
+    margin: 0;
+    padding: 16px;
+}
+
+#content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: rgba(252,182,159,0.20);
+}
+
+.login:hover {
+    box-shadow: 5px 12px 20px rgba(252,182,159,0.13);
+}
+
+.login #login-form * {
+    display: block;
+    margin: 8px auto;
+    padding: 4px;
+    outline: none;
+}
+
+.login #login-form *:focus {
+    outline: none;
+}
+
+.login .errors {
+    list-style: none;
+}
+
+.login .errors li {
+    color: red;
+}

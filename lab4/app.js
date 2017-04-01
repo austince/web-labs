@@ -33,5 +33,8 @@ todo.createTask(
     .then(() => todo.completeTask(toCompleteId))
     // Query and log the remaining tasks
     .then(todo.getAllTasks)
-    .then(console.log);
+    .then(console.log)
+    .then(() => {
+      process.exit(0);
+    });
 

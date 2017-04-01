@@ -1,14 +1,17 @@
 {
   "development": {
     "port": 3000,
-    "name": "Lab 8 - Dev"
+    "name": "Lab 9 - Dev",
+    "secret": "kittens"
   },
   "production": {
     "port": 3000,
-    "name": "Lab 8 - Production"
+    "name": "Lab 9 - Production",
+    "secret": "cats"
   },
   "testing": {
     "port": 3001,
-    "name": "Lab 8 - Testing"
+    "name": "Lab 9 - Testing",
+    "secret": "dogs"
   }
 }

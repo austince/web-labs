@@ -14,8 +14,7 @@ const settings = {
 
 const fullMongoUrl = url.resolve(
     settings.mongoConfig.serverUrl,
-    settings.mongoConfig.database
-);
+    settings.mongoConfig.database);
 
 let connection;
 

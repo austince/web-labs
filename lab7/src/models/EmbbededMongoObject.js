@@ -8,7 +8,8 @@ const MongoObject = require('./MongoObject');
 /* eslint-disable no-underscore-dangle  */
 
 class EmbeddedMongoObject {
-  constructor(id, embeddedClass = null, embeddedFieldName = EmbeddedMongoObject.EMBEDDED_FIELD_NAME) {
+  constructor(id, embeddedClass = null,
+    embeddedFieldName = EmbeddedMongoObject.EMBEDDED_FIELD_NAME) {
     if (!id) {
       id = uuid();
     }

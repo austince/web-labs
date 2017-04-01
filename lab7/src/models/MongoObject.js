@@ -66,7 +66,7 @@ class MongoObject {
 
     return this.getCollection()
         .then((collection) => {
-          return collection.findOne({ _id: this._id });
+          return collection.findByUsername({ _id: this._id });
         }).then((result) => {
           if (result === null) {
             throw createError(HttpStatus.NOT_FOUND, `Can't find a ${self.constructor.name} with id:${self._id}`);
@@ -135,7 +135,7 @@ class MongoObject {
 
     return getCollectionFn(collectionName)()
         .then((collection) => {
-          return collection.findOne(query);
+          return collection.findByUsername(query);
         }).then((result) => {
           if (result === null) {
             throw createError(HttpStatus.NOT_FOUND, `Can't find id:${id} in ${collectionName}`);
